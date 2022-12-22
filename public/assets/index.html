@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <!-- <link rel="stylesheet" href="../../src/assets/css/style.css"> -->
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <h2 class="opcoes">select the options</h2>
+        <ul class="lista">
+            <li>Password size: <input type="number" value ="4" class="numero-caracteres" max="16" min="4"></li>
+            <li>Add numbers <input type="checkbox" class="adicionar-numeros" checked></li>
+            <li>Uppercase characters <input type="checkbox" class="adicionar-maiusculas"></li>
+            <li>Lowercase characters <input type="checkbox" class="adicionar-minusculas"></li>
+            <li>Other symbols <input type="checkbox" class="adicionar-simbolos" checked></li>
+            <li>No repeating characters <input type="checkbox" class="nao-repetir" checked></li>
+
+        </ul>
+        <!-- <div class="cpf-gerado"></div> -->
+        <button class="botao-gera">Generate new password</button>
+        <input type="text" class="senha-gerada" disabled>
+        <button class="copy">Copy to clipboard</button>
+        
+    </div>
+    <script src="./js/bundle.js"></script>
+</body>
+</html>
